@@ -50,11 +50,6 @@ public class OAuthSecurityRealm extends SecurityRealm {
     }
 
     @Override
-    public ExternalGroupsProvider getGroupsProvider() {
-        return new OAuthGroupsProvider(settings);
-    }
-
-    @Override
     public String getName() {
         return NAME;
     }
